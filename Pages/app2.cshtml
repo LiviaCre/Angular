@@ -1,0 +1,23 @@
+﻿@page
+@model aspnetwebapp.Pages.app2Model
+
+<app2-angular></app2-angular>
+
+
+
+
+
+
+@Html.PartialSectionScripts(
+    @<script src="~/js/app2/main.js" defer></script>
+
+)
+@Html.PartialSectionScripts(
+
+    @<script src="~/js/app2/polyfills.js" defer></script>
+
+)
+@Html.PartialSectionScripts(
+
+    @<script src="~/js/app2/runtime.js" defer></script>
+)

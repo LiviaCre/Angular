@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3" >
+    <svg class="bi" width="1em" height="1em"><use xlink:href="#collection" /></svg>
+</div>
+<h3 class="fs-2">Featured title</h3>
+<app-my-angular-elements></app-my-angular-elements>
+<a href="#" class="icon-link d-inline-flex align-items-center">
+    Call to action
+    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right" /></svg>
+</a>
+
+@Html.PartialSectionScripts(
+    @<script src="~/js/app1/main.js" defer></script>
+
+)
+@Html.PartialSectionScripts(
+
+    @<script src="~/js/app1/polyfills.js" defer></script>
+
+)
+@Html.PartialSectionScripts(
+
+    @<script src="~/js/app1/runtime.js" defer></script>
+)

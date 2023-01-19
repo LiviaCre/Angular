@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\main.js" />
+    <Content Remove="wwwroot\js\polyfills.js" />
+    <Content Remove="wwwroot\js\runtime.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\app1\main.js" />
+    <None Include="wwwroot\js\app1\polyfills.js" />
+    <None Include="wwwroot\js\app1\runtime.js" />
+  </ItemGroup>
+
+</Project>
